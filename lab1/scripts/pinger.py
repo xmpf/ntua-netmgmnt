@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import subprocess
 
 # open file in append mode to write results
