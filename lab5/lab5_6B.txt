@@ -1,0 +1,21 @@
+{
+	"dpid" : 1,
+	"table_id": X,
+	"out_port": X,
+	"out_group": X,
+	"cookie": X,
+	"priority": X,
+	"idle_timeout": X,
+	"hard_timeout": 30,
+	"match": {
+		"in_port": X, 	# input port
+		"dl_src": X, 	# src MAC
+		"dl_dst": X, 	# dst MAC
+	},
+	"actions": [
+		{
+			"type": "OUTPUT",
+			"port": X
+		}
+	]
+}

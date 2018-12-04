@@ -1,0 +1,85 @@
+netmg034@maria ~> openssl s_client -state -host netmg.netmode.ntua.gr -port 443 -cert nm34.crt -key nm34.key -tls1                                                                                                                                                                                                          
+CONNECTED(00000003)                                                                                                                                                                                                                                                                                                         
+SSL_connect:before SSL initialization                                                                                                                                                                                                                                                                                       
+SSL_connect:SSLv3/TLS write client hello                                                                                                                                                                                                                                                                                    
+SSL_connect:SSLv3/TLS write client hello                                                                                                                                                                                                                                                                                    
+SSL_connect:SSLv3/TLS read server hello                                                                                                                                                                                                                                                                                     
+depth=0 C = GR, ST = ATTICA, O = NTUA, OU = NETMODE, CN = NETMAN Web Server, emailAddress = netman@netmode.ntua.gr                                                                                                                                                                                                          
+verify error:num=66:EE certificate key too weak                                                                                                                                                                                                                                                                             
+verify return:1                                                                                                                                                                                                                                                                                                             
+depth=0 C = GR, ST = ATTICA, O = NTUA, OU = NETMODE, CN = NETMAN Web Server, emailAddress = netman@netmode.ntua.gr                                                                                                                                                                                                          
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 C = GR, ST = ATTICA, O = NTUA, OU = NETMODE, CN = NETMAN Web Server, emailAddress = netman@netmode.ntua.gr
+verify error:num=21:unable to verify the first certificate
+verify return:1
+SSL_connect:SSLv3/TLS read server certificate
+SSL_connect:SSLv3/TLS read server key exchange
+SSL_connect:SSLv3/TLS read server certificate request
+SSL_connect:SSLv3/TLS read server done
+SSL_connect:SSLv3/TLS write client certificate
+SSL_connect:SSLv3/TLS write client key exchange
+SSL_connect:SSLv3/TLS write certificate verify
+SSL_connect:SSLv3/TLS write change cipher spec
+SSL_connect:SSLv3/TLS write finished
+SSL3 alert read:fatal:unknown CA
+SSL_connect:error in SSLv3/TLS write finished
+140415804015872:error:14094418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca:../ssl/record/rec_layer_s3.c:1399:SSL alert number 48
+---
+Certificate chain
+ 0 s:/C=GR/ST=ATTICA/O=NTUA/OU=NETMODE/CN=NETMAN Web Server/emailAddress=netman@netmode.ntua.gr
+   i:/C=GR/ST=Attica/L=Athens/O=NTUA/OU=NETMODE/CN=NETMODE COURSE CA - 2008/emailAddress=root@netmode.ntua.gr
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDZjCCAs+gAwIBAgIBAzANBgkqhkiG9w0BAQQFADCBmDELMAkGA1UEBhMCR1Ix
+DzANBgNVBAgTBkF0dGljYTEPMA0GA1UEBxMGQXRoZW5zMQ0wCwYDVQQKEwROVFVB
+MRAwDgYDVQQLEwdORVRNT0RFMSEwHwYDVQQDExhORVRNT0RFIENPVVJTRSBDQSAt
+IDIwMDgxIzAhBgkqhkiG9w0BCQEWFHJvb3RAbmV0bW9kZS5udHVhLmdyMB4XDTE0
+MTExMTEyMjU0NVoXDTE1MTExMTEyMjU0NVowgYIxCzAJBgNVBAYTAkdSMQ8wDQYD
+VQQIEwZBVFRJQ0ExDTALBgNVBAoTBE5UVUExEDAOBgNVBAsTB05FVE1PREUxGjAY
+BgNVBAMTEU5FVE1BTiBXZWIgU2VydmVyMSUwIwYJKoZIhvcNAQkBFhZuZXRtYW5A
+bmV0bW9kZS5udHVhLmdyMFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAJx7sRiA6WX2
++EYo2v1ruc102eCrcth5VzR5WvpBA3Nqt7u6+5f0qHSqvP3EiAn8XFwq93s06MLO
+6cM2MeD68aMCAwEAAaOCARYwggESMAkGA1UdEwQCMAAwLAYJYIZIAYb4QgENBB8W
+HU9wZW5TU0wgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBRLUmCxHMf0
+h3RtSn6u8105gbYUtDCBtwYDVR0jBIGvMIGsoYGepIGbMIGYMQswCQYDVQQGEwJH
+UjEPMA0GA1UECBMGQXR0aWNhMQ8wDQYDVQQHEwZBdGhlbnMxDTALBgNVBAoTBE5U
+VUExEDAOBgNVBAsTB05FVE1PREUxITAfBgNVBAMTGE5FVE1PREUgQ09VUlNFIENB
+IC0gMjAwODEjMCEGCSqGSIb3DQEJARYUcm9vdEBuZXRtb2RlLm50dWEuZ3KCCQCS
+xS+8Lo8BEzANBgkqhkiG9w0BAQQFAAOBgQB35254IiyHmJ2ZzR/jStWiWoFcymaX
+xXtWcJObGyZOxr5cZIKlkRUMarHqwADFrW6GK/Tyj96xis/lsqAomsh1NQH0lZRH
+X+YRfM+5BQYbdiTNMRA4XtKRkwg1PnfbSQAgh44qrqaAfw6MySwII/i5m7ccJyqK
+4/gXss6kWmbGZw==
+-----END CERTIFICATE-----
+subject=/C=GR/ST=ATTICA/O=NTUA/OU=NETMODE/CN=NETMAN Web Server/emailAddress=netman@netmode.ntua.gr
+issuer=/C=GR/ST=Attica/L=Athens/O=NTUA/OU=NETMODE/CN=NETMODE COURSE CA - 2008/emailAddress=root@netmode.ntua.gr
+---
+Acceptable client certificate CA names
+/C=GR/ST=Attica/L=Athens/O=NTUA/OU=NETMODE/CN=maria.netmode.ece.ntua.gr/emailAddress=admin@netmode.ntua.gr
+Client Certificate Types: RSA sign, DSA sign, ECDSA sign
+Server Temp Key: ECDH, P-256, 256 bits
+---
+SSL handshake has read 1284 bytes and written 1460 bytes
+Verification error: unable to verify the first certificate
+---
+New, TLSv1.0, Cipher is ECDHE-RSA-AES256-SHA
+Server public key is 512 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1
+    Cipher    : ECDHE-RSA-AES256-SHA
+    Session-ID:
+    Session-ID-ctx:
+    Master-Key: 6C86DE2A15D4D5C750FEF8EAA90A70329A34AC7A5ED94D890BB2A1D19E9CB3602EA053BAA326DD098BB9CCA90FCEA850
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1542036474
+    Timeout   : 7200 (sec)
+    Verify return code: 21 (unable to verify the first certificate)
+    Extended master secret: no
+---
