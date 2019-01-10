@@ -1,0 +1,1 @@
+{"1": {"dp_desc": "None", "sw_desc": "2.3.0", "hw_desc": "Open vSwitch", "serial_num": "None", "mfr_desc": "Nicira, Inc."}}

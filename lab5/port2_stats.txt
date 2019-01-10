@@ -1,0 +1,1 @@
+{"1": [{"tx_dropped": 0, "rx_packets": 37, "rx_crc_err": 0, "tx_bytes": 3974, "rx_dropped": 0, "port_no": 2, "rx_over_err": 0, "rx_frame_err": 0, "rx_bytes": 2906, "tx_errors": 0, "duration_nsec": 329000000, "collisions": 0, "duration_sec": 14489, "rx_errors": 0, "tx_packets": 51}]}
